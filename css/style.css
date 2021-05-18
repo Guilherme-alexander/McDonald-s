@@ -1,0 +1,292 @@
+/*reset no html padrão*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+	height:100%;
+	background-color:#fff;
+
+}
+/*DIVS GERAIS*/
+/*centralizar é tamanho do arquivo*/
+.container{
+	width:100%;
+	max-width:1280px;
+	margin:0 auto;
+
+}
+
+.clear{
+	clear:both;
+}
+/**************/
+
+/*Heder da pagina*/
+header{
+	background-color:#C30101;
+/*	background-color:#f2f2f2;*/
+/*	background-color:#29526d;*/
+	padding:10px 2% 15px 2%;
+}
+/*logo 1*/
+.logo-1{
+	float:left;
+	width:140px;
+	height:70px;
+	background-image:url('../imagens/logo1.jpg');
+	background-size:100% auto;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+/*logo 2*/
+.logo-2{
+	float:right;
+	width:100px;
+	height:70px;
+	background-image:url('../imagens/unnamed.jpg');;
+	background-size:100% auto;
+	background-position:center;
+	background-repeat:no-repeat;
+
+}
+/*fundo da seção/imagem*/
+section.cover-form{
+	width:100%;
+
+}
+/*imagen de fundo praia*/
+.bg{
+	position:relative;
+	height:475px;
+	background-size:100% auto;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-image:url('../imagens/restaurant.jpg');
+}
+
+/*formulario caixa pai*/
+.form-container{
+	position:absolute;
+	right:30px;
+	top:-2.5%;
+	width:400px;
+	height:96%;
+	background-color:#2eb113;
+	-webkit-box-shadow: 1px 1px 2px 1px rgb(180,180,180);
+	-moz-box-shadow: 1px 1px 2px 1px rgb(180,180,180);
+	box-shadow: 1px 1px 2px 1px rgb(170,170,170);
+}
+i{
+	position: relative;
+	top:7px;
+	margin:5px;
+	color:white;
+}
+/*texto inicial do fomulario*/
+.form-container h2{
+	font-weight:bold;
+	padding:25px 15px;
+	font-size:18px;
+	color:white;
+	background-color:#44d30b;
+}
+/*aplicando margim na caixa de texto inicial*/
+.form-container form{
+	margin-top:8px;
+	padding:15px;
+	
+	background-color:white;
+}
+/*paragrafo nome,email,telefone campos obrigatorio*/
+.form-container form p{
+	font-size:14px;
+	color:#650000;
+}
+/*:not(:first-child) aplique depois do primeiro*/
+/*aplicando margim*/
+.form-wraper:not(:first-child){
+	margin-top:20px;
+
+}
+/*last-child aplique no utimo conteudo*/
+/*aplicando margim*/
+.form-wraper:last-child{
+	margin-top:20px;
+}
+/*caixa de texto nome.email,telefone*/
+.form-container form input[type=text]{
+	outline:none;
+	font-weight:bold;
+	width:100%;
+	height:45px;
+	line-height:45px;
+	padding-left:10px;
+	border:1px solid #ccc;
+}
+/*botão do formulario de enviar*/
+.form-container form input[type=submit]{
+	width:100%;
+	height:50px;
+	font-size:25px;
+	font-weight:bold;
+	margin-top:20px;
+	color:white;
+	cursor:pointer;
+	text-transform:uppercase;
+	background-color:#44d30b;
+	border:0;
+	border-bottom:3px solid #2eb113;
+}
+/*section 2*/
+section.chamada{
+	z-index:1;
+	width:100%;
+	text-align:center;
+	
+}
+/*sectio 2 centralizada*/
+section.chamada div.container{
+	padding:15px 0 10px 0;
+	background-color:#bf0000;
+	border-bottom:4px solid #ffb100;
+}
+/*sectio 2 titulo*/
+section.chamada h2{
+	width:96%;
+	max-width:700px;
+	font-size:24px;
+	display:inline-block;
+	color:white;
+	padding:30px 0;
+	font-weight:bold;
+}
+/*sectio 2 paragrafo*/
+section.chamada p{
+	width:96%;
+	max-width:700px;
+	display:inline-block;
+	color:white;
+	font-size:23px;
+	font-weight:bold;
+}
+
+div.arrow{
+    position: relative;
+    top: 39px;
+    left: 50%;
+    margin-left: -20px;
+    width: 54px;
+    height: 54px;
+    background-image: url(../imagens/arrow1.png);
+    background-size: 100% 100%;
+}
+/*imagem do mosaico estilo com display:flex;*/
+.flex-mosaico{
+	display:flex;
+}
+/*imagem do mosaico espaço*/
+.flex-mosaico:not(:first-child){
+	margin-top:10px;
+}
+/*imagem do mosaico*/
+.item-1-mosaico{
+	width:60%;
+	background-size:cover;
+	background-position:center;
+}
+/*texto/dimenção/cor do mosaico*/
+.item-2-mosaico{
+	width:40%;
+	padding:80px 40px;
+	background-color:#ffb100;
+/*	background-color:black;*/
+
+}
+/*paragrafo do mosaico*/
+.item-2-mosaico p{
+	color:white;
+}
+/*roda pé alinhamento*/
+footer{
+	margin-top:10px;
+	text-align:center;
+	padding:20px 0;
+	background-color:#bf0000;
+/*	background-color:#29526d;*/
+}
+/*roda pé imagen logo*/
+footer img{
+	width:120px;
+
+}
+/*roda pé paragrafó*/
+footer p{
+	margin-top:8px;
+	color:white;
+	font-weight:bold;
+	
+}
+
+/*responsivo com media screen*/
+@media screen and (max-width:768px){
+
+	.flex-mosaico:not(:first-child){
+		margin-top:0px;
+	}
+	.flex-mosaico{
+		display:block;
+
+	}
+
+	.item-1-mosaico{
+		padding-top:80%;
+		width:100%;
+	}
+
+	.item-2-mosaico{
+		text-align:center;
+		width:100%;
+	}
+
+	footer{
+		margin-top:0;
+	}
+
+}
+
+/*responsivo com media screen*/
+@media screen and (max-width:1024px){
+	.bg{
+		text-align:center;
+		padding:40px 0;
+		height:auto;
+	}
+
+	.form-container{
+		width:95%;
+		height:auto;
+		max-width:400px;
+		position:static;
+		display:inline-block;
+	}
+
+}
+
+/*responsivo com media screen*/
+@media screen and (max-width:510px){
+
+	header{
+		text-align:center;
+	}
+
+	[class^="logo"]{
+		margin-top:10px;
+		display:inline-block;
+		float:none;
+	}
+
+}
