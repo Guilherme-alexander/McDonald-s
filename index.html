@@ -1,131 +1,178 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
-
 <head>
-	
-	<title>McDonald´s</title>
-
-	<!--fonte Open Sans-->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
-	<meta charset="UTF-8"/>
-
-	<!-- Responsivo -->
-	<meta nome="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
-
-	<!--css-->
-	<link href="css/style.css" rel="stylesheet" type="text/css"/>
-
-	<!--Font Awesome CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-	<!--tegs para SEO-->
-	<meta nome="description" content="conteudo do meu Site.">
-	<meta nome="keywords" content="palavras-chaves">
-	<meta nome="author" content="Guilherme Alexander">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>McDonald's - Início</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="McDonald's - Os melhores hambúrgueres e combos. Peça agora pelo delivery!">
+    <meta name="keywords" content="McDonald's, hambúrguer, fast food, delivery, combo">
+    <meta name="author" content="Guilherme Alexander">
+    
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-1"></div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="#produtos">Cardápio</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            <div class="logo-2"></div>
+        </div>
+    </header>
 
-	<header>
-		<div class="container">
-			<div><div class="logo-1"></div><!--logo-1--></div>
-			<div><div class="logo-2"></div><!--logo-2--></div>
-			<div class="clear"></div><!--clear-->
-		</div><!--container-->
-	</header>
-	<section class="cover-form">
-		<div class="container bg">
-			<div class="form-container">
-				<h2><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i> Faça Seu Pedido Agora Mesmo </h2>
-				<form>
+    <!-- BANNER PRINCIPAL -->
+    <section class="cover-form" id="home">
+        <div class="container bg">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <span class="badge-hero">Delivery</span>
+                <h1 class="hero-title">O sabor <span>McDonald's</span></h1>
+                <p class="hero-subtitle">Os melhores hambúrgueres, agora na sua casa</p>
+                <a href="contact.html" class="btn-hero">
+                    <i class="fas fa-shopping-bag"></i> Faça seu Pedido
+                </a>
+            </div>
+        </div>
+    </section>
 
-					<div class="form-wraper">
-						<p>Nome Completo</p>
-						<input type="text" name="nome" required placeholder="Nome">
-					</div><!--form-wraper-->
-					<div class="form-wraper">
-						<p>Endereço</p>
-						<input type="text" name="Endereço" required placeholder="Endereço">
-					</div><!--form-wraper-->
+    <!-- CHAMADA / DESTAQUE -->
+    <section class="chamada" id="ofertas">
+        <div class="container">
+            <div class="chamada-content">
+                <span class="badge">Destaques</span>
+                <h2>Sabores que você <span>merece</span></h2>
+                <p>Ingredientes frescos, qualidade incomparável e entrega rápida</p>
+                <div class="arrow bounce">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					<div class="form-wraper">
-						<p>Telefone</p>
-						<input type="text" name="telefone" required placeholder="Telefone">
-					</div><!--form-wraper-->
+    <!-- MOSAICO / PRODUTOS -->
+    <section class="mosaico" id="produtos">
+        <div class="container">
+            <!-- Item 1 -->
+            <div class="flex-mosaico" data-aos="fade-up">
+                <div class="item-1-mosaico" style="background-image:url('imagens/mosaico1.jpg');">
+                    <div class="item-badge">Novo</div>
+                </div>
+                <div class="item-2-mosaico">
+                    <span class="mosaico-tag">SIGNATURE</span>
+                    <h3>ANGUS BLT</h3>
+                    <p>O clássico que você ama com um toque especial. Pão brioche, hambúrguer de angus, bacon crocante, alface, tomate e molho especial.</p>
+                    <a href="#" class="btn-saiba-mais">Ver mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
 
-					<div class="form-wraper">
-						<input type="submit" name="acao" value="Enviar">
-					</div><!--form-wraper-->
+            <!-- Item 2 -->
+            <div class="flex-mosaico reverse" data-aos="fade-up">
+                <div class="item-1-mosaico" style="background-image:url('imagens/mosaico2.jpg');">
+                    <div class="item-badge">Voltou!</div>
+                </div>
+                <div class="item-2-mosaico">
+                    <span class="mosaico-tag">NEW</span>
+                    <h3>ANGUS MUSHROOM</h3>
+                    <p>Uma explosão de sabores com cogumelos frescos, queijo derretido e o suculento hambúrguer de angus. Uma experiência única.</p>
+                    <a href="#" class="btn-saiba-mais">Ver mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
 
-					<div class="form-wraper">
-						<p>* Campos Obrigatórios para Entrega</p>
-					</div><!--form-wraper-->
+            <!-- Item 3 -->
+            <div class="flex-mosaico" data-aos="fade-up">
+                <div class="item-1-mosaico" style="background-image:url('imagens/mosaico3.jpg');">
+                    <div class="item-badge">Doce</div>
+                </div>
+                <div class="item-2-mosaico">
+                    <span class="mosaico-tag">DELUXE</span>
+                    <h3>Biscoff Speculoos</h3>
+                    <p>Uma sobremesa irresistível com a clássica Biscoff, combinando texturas crocantes e cremosas que vão encantar seu paladar.</p>
+                    <a href="#" class="btn-saiba-mais">Ver mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
 
-				</form>
-			</div><!--form-container-->
-		
-		</div><!--container-->
-	
-	</section><!--cover-form-->
+            <!-- Item 4 -->
+            <div class="flex-mosaico reverse" data-aos="fade-up">
+                <div class="item-1-mosaico" style="background-image:url('imagens/mosaico4.jpg');">
+                    <div class="item-badge">Sobremesa</div>
+                </div>
+                <div class="item-2-mosaico">
+                    <span class="mosaico-tag">MCDEL</span>
+                    <h3>McDelícias</h3>
+                    <p>Uma seleção especial de sobremesas e acompanhamentos para completar sua refeição com muito sabor e qualidade.</p>
+                    <a href="#" class="btn-saiba-mais">Ver mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<section class="chamada">
-		<div class="container">
-			<div><h2>Vida que você sempre sonhou</h2></div>
-			<p>coberturas e apartamentos de frente para o mar em São Paulo</p>
-			<div class="arrow"></div><!--arrow-->
-		</div><!--container-->
-	</section><!--chamada-->
+    <!-- BANNER PROMOCIONAL -->
+    <section class="banner-promo">
+        <div class="container">
+            <div class="promo-content">
+                <div class="promo-text">
+                    <span class="promo-tag">Oferta Especial</span>
+                    <h2>Combo Família</h2>
+                    <p>4 hambúrgueres + 4 batatas grandes + 4 refrigerantes</p>
+                    <p class="promo-price">Por apenas <span>R$ 49,90</span></p>
+                    <a href="contact.html" class="btn-promo">Peça Agora <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="promo-image">
+                    <i class="fas fa-hamburger"></i>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<section class="mosaico">
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="imagens/logo1.jpg" alt="McDonald's">
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="footer-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>(55) 11 4567-8910</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 McDonald's - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
 
-		<div class="container">
-<!------------------------------------------------------------------------------->
-			<div class="flex-mosaico">
-				<div style="background-image:url('imagens/mosaico1.jpg');" class="item-1-mosaico"></div><!--item-1-mosaico-->
+    <!-- BOTÃO WHATSAPP FLUTUANTE (API: https://wa.me/NUMERO)-->
+    <a href="#" class="whatsapp-float" target="_blank"> 
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-				<div class="item-2-mosaico">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel ligula in ligula dictum auctor. Maecenas eros tortor, congue sit amet libero ac, consectetur molestie ante. Pellentesque sit amet dictum tortor. Nam rhoncus lacus sit amet orci porttitor, et porta leo viverra. Vivamus ultricies gravida nibh</p>
-				</div><!--item-2-mosaico-->
-
-			</div><!--flex-mosaico-->
-<!------------------------------------------------------------------------------->
-			<div style="flex-direction:row-reverse;" class="flex-mosaico">
-				<div style="background-image:url('imagens/mosaico2.jpg');" class="item-1-mosaico"></div><!--item-1-mosaico-->
-
-				<div class="item-2-mosaico">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel ligula in ligula dictum auctor. Maecenas eros tortor, congue sit amet libero ac, consectetur molestie ante. Pellentesque sit amet dictum tortor. Nam rhoncus lacus sit amet orci porttitor, et porta leo viverra. Vivamus ultricies gravida nibh</p>
-				</div><!--item-2-mosaico-->
-
-			</div><!--flex-mosaico-->
-<!------------------------------------------------------------------------------->
-			<div style="" class="flex-mosaico">
-				<div style="background-image:url('imagens/mosaico3.jpg'); " class="item-1-mosaico"></div><!--item-1-mosaico-->
-
-				<div class="item-2-mosaico">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel ligula in ligula dictum auctor. Maecenas eros tortor, congue sit amet libero ac, consectetur molestie ante. Pellentesque sit amet dictum tortor. Nam rhoncus lacus sit amet orci porttitor, et porta leo viverra. Vivamus ultricies gravida nibh</p>
-				</div><!--item-2-mosaico-->
-
-			</div><!--flex-mosaico-->
-<!------------------------------------------------------------------------------->
-			<div style="flex-direction:row-reverse;" class="flex-mosaico">
-				<div style="background-image:url('imagens/mosaico4.jpg');" class="item-1-mosaico"></div><!--item-1-mosaico-->
-
-				<div class="item-2-mosaico">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel ligula in ligula dictum auctor. Maecenas eros tortor, congue sit amet libero ac, consectetur molestie ante. Pellentesque sit amet dictum tortor. Nam rhoncus lacus sit amet orci porttitor, et porta leo viverra. Vivamus ultricies gravida nibh</p>
-				</div><!--item-2-mosaico-->
-
-			</div><!--flex-mosaico-->
-<!------------------------------------------------------------------------------->			
-		</div><!--container-->
-
-	</section><!--mosaico-->
-
-		<footer>
-			<a href="#"><img src="imagens/logo1.jpg"></a>
-			<p>Todos os direitos reservados</p>
-			<p><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i> (55) 11 4567-8910</p>
-		</footer>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>

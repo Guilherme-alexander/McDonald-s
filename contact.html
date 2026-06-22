@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>McDonald's - Contato</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="Faça seu pedido no McDonald's. Preencha o formulário e receba seu delivery.">
+    <meta name="keywords" content="McDonald's, pedido, delivery, contato, formulário">
+    <meta name="author" content="Guilherme Alexander">
+    
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-1"></div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html#produtos">Cardápio</a></li>
+                    <li><a href="index.html#ofertas">Ofertas</a></li>
+                    <li><a href="contact.html" class="active">Contato</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            <div class="logo-2"></div>
+        </div>
+    </header>
+
+    <!-- BANNER CONTATO -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="page-banner-content">
+                <h1><i class="fas fa-phone-alt"></i> Fale Conosco</h1>
+                <p>Faça seu pedido ou tire suas dúvidas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO PRINCIPAL -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- FORMULÁRIO -->
+                <div class="contact-form-wrapper">
+                    <div class="contact-header">
+                        <h2><i class="fas fa-shopping-bag"></i> Faça Seu Pedido</h2>
+                        <p>Preencha os dados abaixo e receba seu McDonald's em casa</p>
+                    </div>
+
+                    <form id="orderForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="nome">
+                                <i class="fas fa-user"></i> Nome Completo
+                            </label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="endereco">
+                                <i class="fas fa-map-pin"></i> Endereço
+                            </label>
+                            <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefone">
+                                    <i class="fas fa-phone"></i> Telefone
+                                </label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="whatsapp">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </label>
+                                <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pedido">
+                                <i class="fas fa-pizza-slice"></i> Seu Pedido
+                            </label>
+                            <textarea id="pedido" name="pedido" rows="4" placeholder="Descreva seu pedido ou escolha do cardápio"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="observacao">
+                                <i class="fas fa-sticky-note"></i> Observações
+                            </label>
+                            <input type="text" id="observacao" name="observacao" placeholder="Ex: sem cebola, molho extra...">
+                        </div>
+
+                        <button type="submit" class="btn-submit-form">
+                            <i class="fas fa-check-circle"></i> Enviar Pedido
+                        </button>
+
+                        <p class="form-obrigatorio">* Campos obrigatórios para entrega</p>
+                    </form>
+
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+
+                <!-- INFORMAÇÕES DA LOJA -->
+                <div class="contact-info-wrapper">
+                    <div class="info-card">
+                        <h3><i class="fas fa-store"></i> Nossas Lojas</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Unidade Centro</strong>
+                                <p>Av. Paulista, 1000 - São Paulo, SP</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Unidade Zona Sul</strong>
+                                <p>Av. Interlagos, 500 - São Paulo, SP</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Unidade Zona Norte</strong>
+                                <p>Av. Cruzeiro do Sul, 200 - São Paulo, SP</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="fas fa-clock"></i> Horário de Funcionamento</h3>
+                        <div class="info-item">
+                            <i class="fas fa-calendar-day"></i>
+                            <div>
+                                <strong>Segunda a Sexta</strong>
+                                <p>10:00 - 23:00</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar-weekend"></i>
+                            <div>
+                                <strong>Sábados e Domingos</strong>
+                                <p>11:00 - 22:00</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-truck"></i>
+                            <div>
+                                <strong>Delivery</strong>
+                                <p>10:00 - 22:30</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="fas fa-headset"></i> Atendimento</h3>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <strong>Telefone</strong>
+                                <p>(11) 4567-8910</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <p>(11) 98765-4321</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>E-mail</strong>
+                                <p>contato@mcdonalds.com.br</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card social-card">
+                        <h3><i class="fas fa-share-alt"></i> Redes Sociais</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-link facebook">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="social-link twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#" class="social-link youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAPA (opcional) -->
+    <section class="map-section">
+        <div class="container">
+            <h2><i class="fas fa-map"></i> Onde Estamos</h2>
+            <div class="map-placeholder">
+                <div class="map-content">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Encontre a unidade mais próxima de você</p>
+                    <span>Av. Paulista, 1000 - São Paulo, SP</span>
+                </div>
+                <div class="map-grid">
+                    <div class="map-card">
+                        <i class="fas fa-store-alt"></i>
+                        <h4>Unidade Centro</h4>
+                        <p>Av. Paulista, 1000</p>
+                        <small>📍 São Paulo - SP</small>
+                    </div>
+                    <div class="map-card">
+                        <i class="fas fa-store-alt"></i>
+                        <h4>Unidade Zona Sul</h4>
+                        <p>Av. Interlagos, 500</p>
+                        <small>📍 São Paulo - SP</small>
+                    </div>
+                    <div class="map-card">
+                        <i class="fas fa-store-alt"></i>
+                        <h4>Unidade Zona Norte</h4>
+                        <p>Av. Cruzeiro do Sul, 200</p>
+                        <small>📍 São Paulo - SP</small>
+                    </div>
+                    <div class="map-card">
+                        <i class="fas fa-store-alt"></i>
+                        <h4>Unidade Zona Leste</h4>
+                        <p>Av. Aricanduva, 300</p>
+                        <small>📍 São Paulo - SP</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="imagens/logo1.jpg" alt="McDonald's">
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="footer-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>(55) 11 4567-8910</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 McDonald's - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÃO WHATSAPP FLUTUANTE (API: https://wa.me/NUMERO)-->
+    <a href="#" class="whatsapp-float" target="_blank"> 
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
